@@ -1,0 +1,12 @@
+<div class="card" [routerLink]="['/detail', company_id]">
+  <div class="company-pic">
+    <img src="./assets/company-placeholder.jpg" alt="company-logo" />
+  </div>
+  <div class="container">
+    <h4>
+      <b>{{ company_name }}</b>
+    </h4>
+    <p>Adres: {{ company_desc }}</p>
+    <p>Open vacatures: {{ active_vacs }}</p>
+  </div>
+</div>

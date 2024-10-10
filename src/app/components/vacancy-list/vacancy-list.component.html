@@ -1,0 +1,9 @@
+@for (item of data; track item){ @if (item.open_vac.length >= 1) {
+<app-company-container
+  [company_name]="item.name"
+  [company_desc]="item.adress"
+  [active_vacs]="item.open_vac.length"
+  [company_id]="item.id"
+></app-company-container>
+} }
+<h2>Totaal items: {{ data.length }}</h2>

@@ -1,0 +1,9 @@
+<div *ngIf="!!this.open_vacs" class="card">
+  <h1>{{ this.open_vacs.name }}</h1>
+  @for (item of this.open_vacs.open_vac; track item) {
+  <div>
+    <h2>{{ item.title }}</h2>
+    <h3>{{ item.description }}</h3>
+  </div>
+  }
+</div>
